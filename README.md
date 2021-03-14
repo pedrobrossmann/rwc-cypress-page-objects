@@ -35,3 +35,10 @@ npm run cy:run:firefox
 
 * Você pode acessar a pipeline de testes [aqui](https://dev.azure.com/pedrobrossmann/Agilizei%20Bootcamp%20Nivel%202/_build)
 
+* Exemplo do resultado da execuçaõ dos testes:
+![image](https://user-images.githubusercontent.com/46963955/111083539-e12e7a80-84ec-11eb-8685-3526e92a1855.png)
+
+# Execução de testes pelo Cypress
+* Login - Assista [aqui](https://user-images.githubusercontent.com/46963955/111083590-0e7b2880-84ed-11eb-8f7c-c02667c261ce.mp4)
+* Cadastro de usuário - Assista [aqui](https://user-images.githubusercontent.com/46963955/111083597-1b981780-84ed-11eb-9d51-bba68268243c.mp4)
+* Cadastro de publicações - Assista [aqui](https://user-images.githubusercontent.com/46963955/111083623-29e63380-84ed-11eb-9cc2-25c2d2385376.mp4)
