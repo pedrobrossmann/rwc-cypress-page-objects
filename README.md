@@ -1,5 +1,4 @@
-# rwc-cypress-page-objects
-# Desafio 02 - Agilizei
+# Desafio 02 - Agilizei-rwc-cypress-page-objects
 
 ### Tecnologias Utilizadas:
 * Framework para crição dos testes [cypress](https://www.cypress.io/)
