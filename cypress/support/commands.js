@@ -18,3 +18,9 @@ Cypress.Commands.add("login_Backgroud", () => {
         })
     })
  })
+
+ import Routes from '../support/routes'
+
+ before(() => {
+    Routes.init()
+ });

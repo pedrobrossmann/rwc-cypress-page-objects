@@ -12,8 +12,8 @@ context('Publicações', () => {
     it('Criar uma publicação', () => {
         // Ação    
         article.preencherFormularioPublicacao()
-        article.submeterFormularioPublicacao
+        article.submeterFormularioPublicacao()
         // Verificação     
-
+        article.verificarSeAPublicaoFoiCriadaComSucesso()
     })
 })
