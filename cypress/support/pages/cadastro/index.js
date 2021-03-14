@@ -1,5 +1,7 @@
+/// <reference types="cypress" />
 const faker = require('faker')
 const el = require('./elements').ELEMENTS
+const elHome = require('../home/elements').ELEMENTS
 import Routes from '../../routes'
 
 class cadastro {
@@ -21,6 +23,9 @@ class cadastro {
         //verificando rotas
         cy.wait(`@${Routes.nomeDaRota.postUsers}`).then(postUsersResponse =>{
             expect(postUsersResponse.response.statusCode).to.eq(200)
+            
+            let nameUser = postUsersResponse.response.body.user.username
+            cy.get(elHome.perfil).should('contain.text', nameUser )
         })
         cy.wait(`@${Routes.nomeDaRota.getTags}`).then(getTagsResponse =>{
             expect(getTagsResponse.response.statusCode).to.eq(200)
@@ -29,6 +34,8 @@ class cadastro {
             expect(getArticlesFeedResponse.response.statusCode).to.eq(200)
         })
 
+        cy.get(elHome.acessarHome).should('be.visible')
+        cy.get(elHome.acessarConfig).should('be.visible')
     }
 }
 

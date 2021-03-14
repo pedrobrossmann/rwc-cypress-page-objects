@@ -6,7 +6,8 @@ class Routes {
         getArticlesTitleComments: 'GETArticlesTitleComments',
         postUsers: 'POSTUsers',
         getTags: 'GETTags',
-        getArticlesFeed: 'GETArticlesFeed'
+        getArticlesFeed: 'GETArticlesFeed',
+        postUserLogin: 'POSTUserLogin'
     }
 
     init() {
@@ -16,6 +17,7 @@ class Routes {
         cy.intercept('POST', '**/api/users').as(this.nomeDaRota.postUsers)
         cy.intercept('GET', '**/api/tags').as(this.nomeDaRota.getTags)
         cy.intercept('GET', '**/api/articles/feed**').as(this.nomeDaRota.getArticlesFeed)
+        cy.intercept('POST', '**/api/users/login').as(this.nomeDaRota.postUserLogin)
     }
 
 }
