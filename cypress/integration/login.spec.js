@@ -1,12 +1,17 @@
 /// <reference types="cypress" />
-var faker = require('faker');
+
+import login from "../support/pages/login";
 
 context('Login', () => {
+    beforeEach(() => {
+        login.acessarLogin()
+    });
+    
     it('Login com sucesso', () => {
-        cy.visit('/login')
+       
+        login.preencherFormulario()
+        login.submeterFormulario()
 
-        cy.get('[type="email"]').type(Cypress.config().user.email)
-        cy.get('[type="password"]').type(Cypress.config().user.senha)
-        cy.get('[type="submit"]').click()
+        //Verificação 
     });
 });
